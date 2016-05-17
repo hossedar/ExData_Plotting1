@@ -10,7 +10,7 @@ EPC_data.sub$Time <- strptime(paste(EPC_data.sub$Date, EPC_data.sub$Time), forma
 
 #checks there are no NAs in data
 #colSums(is.na(EPC_data.sub))
-
+#
 #Plots histogram
 png(file = 'plot1.png', width = 480, height = 480)
 hist(EPC_data.sub$Global_active_power, col = 'red', main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)')
